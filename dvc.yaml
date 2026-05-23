@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: python model.py
+    deps:
+      - data/Cryotherapy.csv
+      - model.py
+    outs:
+      - model.pkl
